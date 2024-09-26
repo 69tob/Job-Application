@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.JobApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#816A6A</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSurface">#A05050</item>
+        <item name="colorSurface">#715F5F</item>
+        <item name="colorOnBackground">#856262</item>
+
+
+        <item name="android:colorBackground">#383030</item> <!-- Gray background for dark mode -->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+    </style>
+</resources>

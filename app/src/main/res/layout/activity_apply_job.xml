@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_background"
+    tools:context=".ApplyJobActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply for Job"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- Job Details -->
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/jobCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#555"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/jobLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#777"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/jobDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Applicant Details -->
+    <EditText
+        android:id="@+id/applicantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/applicantEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/applicantPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/applicantAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:gravity="start"/>
+
+    <!-- File Upload Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Resume/CV"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnUploadResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvResumeFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No file chosen"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
